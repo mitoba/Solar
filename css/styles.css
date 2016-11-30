@@ -1,0 +1,57 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box
+
+}
+
+.center {
+    margin: auto;
+    width: 100%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-bottom: 75px
+}
+
+.moveFieldset {
+    padding-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+#questionaireCSS {
+    width: 50%;
+    margin-left: 44px;
+}
+
+#questionaireCSS2 {
+    width: 35%;
+    margin-left: 44px;
+}
+
+#questionaireSubmit {
+    margin-right: 80px;
+}
+
+.equipmentCenter {
+    padding-bottom: 20px;
+}
+
+#divBack {
+    background-color:rgba(255, 255,255, 0.8);
+    margin-top: 55px;
+}
+
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}

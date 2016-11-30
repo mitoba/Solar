@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Admin Index</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+		crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/styles.css" />
+
+</head>
+
+<body ng-app="adminMyApp" ng-cloak background="../images/solar4b.jpg">
+	<div ng-controller="adminBodyController">
+
+		<div class="container">
+			<div id="logo">
+				<img src="../images/solar-energy.png" alt="Logo" style="width: 100px">
+			</div>
+			<div id="navBar" class="pull-right">
+			<nav class="navbar navbar-light bg-faded">
+				<ul class="nav navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">Administration Page</a>
+					</li>
+				</ul>				
+			</nav>
+		</div>
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Add Contractor</h2>
+
+					<div class="input-group center moveFieldset">
+
+						<h3>Contractors</h3>
+						<fieldset>
+							<p>
+								<label>Company Name</label>
+								<input type="text" class="form-control" placeholder="Company Name" ng-model="companyName" />
+							</p>
+							<p>
+								<label>First Name</label>
+								<input type="text" class="form-control" placeholder="First Name" ng-model="firstName">
+							</p>
+							<p>
+								<label>Last Name</label>
+								<input type="text" class="form-control" placeholder="Last Name" ng-model="lastName">
+							</p>
+							<p>
+								<label>Age</label>
+								<input type="number" class="form-control" placeholder="Age" ng-model="contractorAge">
+							</p>
+							<p>
+								<label>Address</label>
+								<input type="text" class="form-control" placeholder="Street Address" ng-model="streetAddress">
+								<input type="text" class="form-control" placeholder="City" ng-model="cityAddress">
+								<input type="text" class="form-control" placeholder="State" ng-model="stateAddress">
+								<input type="text" class="form-control" placeholder="Zip Code" ng-model="zipCode">
+							</p>
+							<p>
+								<label>Contact Info</label>
+							</p>
+							<p>
+								<input type="text" class="form-control" ng-model="phoneNumber" placeholder="Phone Number">
+								<input type="email" class="form-control" placeholder="Email" ng-model="emailInfo">
+							</p>
+							<p>
+								<label>Average Price</label>
+								<input type="number" class="form-control" placeholder="Price Per Watt Under 10kw" ng-model="pricePerWatt">
+							</p>
+							<p>
+								<label>Rating</label>
+								<input type="number" class="form-control" placeholder="1-5 Stars" ng-model="starRating" min="1" max="5">
+							</p>
+							<p>
+								<label>Warranty</label>
+								<input type="number" class="form-control" placeholder="Labor Warranty in Years" ng-model="laborWarranty">
+							</p>
+							<p>
+								<button type="button" class="btn btn-primary pull-right" ng-click="pushContractors()">Add</button>
+							</p>
+						</fieldset>
+					</div>
+
+				</div>
+				<h2>Add Equipment</h2>
+				<div class="col-md-4">
+
+					<div class="input-group">
+						<fieldset>
+
+							<div class="center">
+								<h3>Panels</h3>
+
+								<p>
+									<label>Panel Name</label>
+									<input type="text" class="form-control" placeholder="Brand" ng-model="panelBrand">
+								</p>
+								<p>
+									<label>Panel Model</label>
+									<input type="text" class="form-control" placeholder="Model" ng-model="panelModel">
+								</p>
+								<p>
+									<label>Warranty</label>
+									<input type="number" class="form-control" placeholder="Warranty" ng-model="panelWarranty">
+								</p>
+								<p>
+									<label>Rating</label>
+									<input type="number" class="form-control" placeholder="Rating" ng-model="panelRating">
+								</p>
+								<p>
+									<label>Price</label>
+									<input type="number" class="form-control" placeholder="Price" ng-model="panelPrice">
+								</p>
+								<p>
+									<button type="button" class="btn btn-primary pull-right" ng-click="pushPanels()">Add</button>
+								</p>
+							</div>
+
+							<div class="center">
+
+								<h3> Add Mounting Brackets</h3>
+								<p>
+									<label>Bracket Name</label>
+									<input type="text" class="form-control" placeholder="Bracket Name" ng-model="bracketName">
+								</p>
+								<p>
+									<label>Warranty</label>
+									<input type="text" class="form-control" placeholder="Warranty" ng-model="bracketWarranty">
+								</p>
+								<p>
+									<label>Rating</label>
+									<input type="text" class="form-control" placeholder="Rating" ng-model="bracketRating">
+								</p>
+								<p>
+									<label>Price</label>
+									<input type="text" class="form-control" placeholder="Price" ng-model="bracketPrice">
+								</p>
+								<p>
+									<button type="button" class="btn btn-primary pull-right" ng-click="pushMountingBracket()">Add</button>
+								</p>
+
+							</div>
+						</fieldset>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="center moveFieldset">
+						<fieldset>
+							<h3>Inverters</h3>
+							<p>
+								<label>Inverter Brand</label>
+								<input type="text" class="form-control" placeholder="Inverter Name" ng-model="inverterName">
+							</p>
+							<p>
+								<label>Inverter Model</label>
+								<input type="text" class="form-control" placeholder="Inverter Model" ng-model="inverterModel">
+							</p>
+							<p>
+								<label>Watts</label>
+								<input type="text" class="form-control" placeholder="Watts" ng-model="inverterWatts">
+							</p>
+							<p>
+								<label>Price</label>
+								<input type="text" class="form-control" placeholder="Price" ng-model="inverterPrice">
+							</p>
+							<p>
+								<label>Warranty</label>
+								<input type="text" class="form-control" placeholder="Warranty" ng-model="inverterWarranty">
+							</p>
+							<p>
+								<button type="button" class="btn btn-primary pull-right" ng-click="pushInverters()">Add</button>
+							</p>
+						</fieldset>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	<script src="./adminMyApp.js "></script>
+
+	<script src="./adminBodyController.js "></script>
+
+</body>
+
+</html>

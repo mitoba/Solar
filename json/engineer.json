@@ -1,0 +1,35 @@
+{
+    "engineer": "Doug Engineering",
+    "firstName": "Doug",
+    "lastName": "Morales",
+    "age": 37,
+    "address": {
+        "streetAddress": "213 Magnolia",
+        "city": "Huntington Beach",
+        "state": "CA",
+        "postalCode": 92646
+    },
+    "contactInfo":
+        {
+            "email": "business",
+            "phoneNumber": "714-999-0000"
+        }, 
+    "services": [
+        {
+            "type": "plans",
+            "cost": 400
+        },
+        {
+            "type": "engineering calcs",
+            "cost": 200
+        },
+        {
+            "type": "permits",
+            "cost": 400
+        },
+        {
+            "type": "panel upgrade",
+            "cost": 2000
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "panels": [
+
+                {
+                    "name": "SolarWorld",
+                    "model": "280W",
+                    "warranty": "25 years",
+                    "rating": "4.73 stars",
+                    "price": 250
+                },
+                {
+                    "name": "Q Cells",
+                    "model": "250W",
+                    "warranty": "25 years",
+                    "rating": "3.75 stars",
+                    "price": 195
+                },
+                {
+                    "name": "LG",
+                    "model": "295W",
+                    "warranty": "25 years",
+                    "rating": "4.50 stars",
+                    "price": 285
+                },
+                {
+                    "name": "Canadian Solar",
+                    "model": "260W",
+                    "warranty": "25 years",
+                    "rating": "4.25 stars",
+                    "price": 230
+                }
+
+    ],
+    "mountingBracket": [
+        {
+            "name": "Unirac",
+            "warranty": "25 years",
+            "rating": "4.25 stars",
+            "price": 75
+        },
+        {
+            "name": "Ironridge",
+            "warranty": "25 years",
+            "rating": "4.55 stars",
+            "price": 85
+        }
+    ],
+    "inverter": [
+        {
+            "name": "SMA",
+            "model": "Sunny Boy 3000",
+            "watts": "3000",
+            "warranty": "12 years",
+            "price": 2500
+        },
+        {
+            "name": "Enphase",
+            "model": "Microinverter- C250",
+            "watts": "250",
+            "warranty": "20 years",
+            "price": 3500
+        }
+    ],
+    "companies": [
+        {
+            "name": "SCE",
+            "rate": 0.27
+        },
+        {
+            "name": "PGE",
+            "rate": 0.29
+        },
+        {
+            "name": "SDGE",
+            "rate": 0.24
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "contractor": [
+        {
+            "companyName": "Solar Max",
+            "firstName": "John",
+            "lastName": "Smith",
+            "age": 25,
+            "address": {
+                "streetAddress": "21 Castro Lane",
+                "city": "Bakersfield",
+                "state": "CA",
+                "postalCode": "93304"
+            },
+            "contactInfo": {
+                    "email": "johnsmith@solarmax.com",
+                    "number": "661-867-5309"
+                },
+            "averagePrice": "200",
+            "averageCustomerRating": "5 stars",
+            "warranty": "10 years"
+        },
+        {
+            "companyName": "Sun Power",
+            "firstName": "Robert",
+            "lastName": "Jones",
+            "age": 36,
+            "address": {
+                "streetAddress": "111 Main street",
+                "city": "Huntington Beach",
+                "state": "CA",
+                "postalCode": "92648"
+            },
+            "contactInfo": {
+                    "email": "robertjones@sunpower.com",
+                    "number": "661-900-5081"
+            },
+            "averagePrice": "150",
+            "averageCustomerRating": "4 stars",
+            "warranty": "10 years"
+        },
+        {
+            "companyName": "Solar 360",
+            "firstName": "Justin",
+            "lastName": "Case",
+            "age": 19,
+            "address": {
+                "streetAddress": "234 Waitforit Express",
+                "city": "Temecula",
+                "state": "CA",
+                "postalCode": "92675"
+            },
+            "contactInfo": {
+                    "email": "justincase@solar360.com",
+                    "number": "951-123-9876"
+                },          
+            "averagePrice": "100",
+            "averageCustomerRating": "3 stars",
+            "warranty": "10 years"
+        }
+    ]
+}
